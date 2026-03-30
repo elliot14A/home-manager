@@ -1,0 +1,35 @@
+{ pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    opencode
+    wget
+    git
+    curl
+    tree
+    eza
+    fastfetch
+    starship
+    lazyssh
+    lazygit
+    nixfmt
+    ffmpeg
+    whois
+    file
+    rustup
+    gcc
+    nodejs
+    bun
+    python3
+    jq
+    ripgrep
+    fd
+    bat
+    fzf
+    yazi
+    wl-clipboard
+    parted
+    usbutils
+    smartmontools
+    pciutils
+  ];
+}

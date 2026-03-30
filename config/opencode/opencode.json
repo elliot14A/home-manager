@@ -1,0 +1,12 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "rosepine",
+  "plugin": ["opencode-gemini-auth"],
+  "provider": {
+    "google": {
+      "options": {
+        "projectId": "focused-code-465401-k9"
+      }
+    }
+  }
+}

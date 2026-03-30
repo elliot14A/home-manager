@@ -1,0 +1,109 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+$conda\
+$python\
+$line_break\
+$character"""
+
+palette = "rose-pine"
+
+[palettes.rose-pine]
+overlay = '#26233a'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ebbcba'
+pine = '#31748f'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
+text = '#e0def4'
+subtle = '#908caa'
+
+[directory]
+style = "rose"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+Documents = "Doc"
+Downloads = "Dl"
+Music = "Mus"
+Pictures = "Pic"
+
+[git_branch]
+style = "iris"
+symbol = " "
+
+[git_status]
+style = "love"
+format = '([$all_status$ahead_behind]($style) )'
+
+[character]
+success_symbol = "[➜](bold rose)"
+error_symbol = "[➜](bold love)"
+
+[c]
+style = "rose"
+symbol = "C "
+
+[elixir]
+style = "rose"
+symbol = "ex "
+
+[elm]
+style = "rose"
+symbol = "elm "
+
+[golang]
+style = "rose"
+symbol = "go "
+
+[haskell]
+style = "rose"
+symbol = "hs "
+
+[java]
+style = "rose"
+symbol = "java "
+
+[julia]
+style = "rose"
+symbol = "jl "
+
+[nodejs]
+style = "rose"
+symbol = "node "
+
+[nim]
+style = "rose"
+symbol = "nim "
+
+[rust]
+style = "rose"
+symbol = "rs "
+
+[scala]
+style = "rose"
+symbol = "scala "
+
+[python]
+style = "rose"
+symbol = "py "
+
+[conda]
+style = "rose"
+symbol = "conda "
