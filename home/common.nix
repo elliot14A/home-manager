@@ -11,6 +11,18 @@
     stateVersion = "25.11";
   };
 
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "text/html" = [ "app.zen_browser.zen.desktop" ];
+      "application/xhtml+xml" = [ "app.zen_browser.zen.desktop" ];
+      "x-scheme-handler/http" = [ "app.zen_browser.zen.desktop" ];
+      "x-scheme-handler/https" = [ "app.zen_browser.zen.desktop" ];
+      "x-scheme-handler/about" = [ "app.zen_browser.zen.desktop" ];
+      "x-scheme-handler/unknown" = [ "app.zen_browser.zen.desktop" ];
+    };
+  };
+
   programs.home-manager.enable = true;
 
   dconf.enable = true;
@@ -39,6 +51,12 @@
         hostname = "github.com";
         user = "git";
         identityFile = "~/.ssh/github_ed25519";
+        identitiesOnly = true;
+      };
+      "gaur-stag" = {
+        hostname = "178.104.228.8";
+        user = "root";
+        identityFile = "~/.ssh/gaur-deployments/gaur_hetzner_ed25519";
         identitiesOnly = true;
       };
     };

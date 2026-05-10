@@ -27,6 +27,8 @@
     fzf
     yazi
     wl-clipboard
+    cliphist
+    fuzzel
     parted
     usbutils
     smartmontools

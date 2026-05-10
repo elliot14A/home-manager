@@ -4,16 +4,15 @@
     enable = true;
     defaultFonts = {
       sansSerif = [
-        "Inter"
-        "Noto Sans"
+        "Geist"
       ];
-      serif = [ "Noto Serif" ];
-      monospace = [ "JetBrainsMono Nerd Font" ];
+      serif = [ "Geist" ];
+      monospace = [ "JetBrains Mono" ];
     };
   };
 
   home.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    inter
+    geist-font
+    jetbrains-mono
   ];
 }

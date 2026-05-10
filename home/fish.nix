@@ -50,6 +50,8 @@
       kiwi-k9s = "KUBECONFIG=$HOME/.pulumi/k3s/config k9s";
 
       windsurf = "~/Downloads/Windsurf/bin/windsurf";
+
+      hms = "home-manager switch --flake .#kiwi -b backup";
     };
 
     plugins = [
